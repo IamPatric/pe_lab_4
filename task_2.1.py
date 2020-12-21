@@ -18,7 +18,8 @@ def main():
     print(f'Task 2.4: writing in csv changed data\n{data = }')
     print(f'{fp.make_list_from_file("students_changed.csv") = }')
     print(f'Task 2.5: writing in pickle')
-    
+    fp.write_pickle(data, 'test.pickle')
+    print(f'Task 2.6: read pickle\n{fp.read_pickle("test.pickle")}')
     
 if __name__ == '__main__':
     main()
